@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
-    <loc>https://niprom.rs/</loc>
+    <loc>https://KORISNIK.github.io/REPO/</loc>
     <lastmod>2026-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <image:image><image:loc>https://niprom.rs/assets/hero.jpg</image:loc></image:image>
-    <image:image><image:loc>https://niprom.rs/assets/o-nama.jpg</image:loc></image:image>
-    <image:image><image:loc>https://niprom.rs/assets/gal-1.webp</image:loc></image:image>
-    <image:image><image:loc>https://niprom.rs/assets/gal-2.webp</image:loc></image:image>
-    <image:image><image:loc>https://niprom.rs/assets/gal-3.webp</image:loc></image:image>
-    <image:image><image:loc>https://niprom.rs/assets/gal-4.webp</image:loc></image:image>
-    <image:image><image:loc>https://niprom.rs/assets/gal-6.webp</image:loc></image:image>
+    <image:image><image:loc>https://KORISNIK.github.io/REPO/assets/hero.jpg</image:loc></image:image>
+    <image:image><image:loc>https://KORISNIK.github.io/REPO/assets/o-nama.jpg</image:loc></image:image>
+    <image:image><image:loc>https://KORISNIK.github.io/REPO/assets/gal-1.webp</image:loc></image:image>
+    <image:image><image:loc>https://KORISNIK.github.io/REPO/assets/gal-2.webp</image:loc></image:image>
+    <image:image><image:loc>https://KORISNIK.github.io/REPO/assets/gal-3.webp</image:loc></image:image>
+    <image:image><image:loc>https://KORISNIK.github.io/REPO/assets/gal-4.webp</image:loc></image:image>
+    <image:image><image:loc>https://KORISNIK.github.io/REPO/assets/gal-6.webp</image:loc></image:image>
     <video:video>
-      <video:thumbnail_loc>https://niprom.rs/assets/gal-3.webp</video:thumbnail_loc>
+      <video:thumbnail_loc>https://KORISNIK.github.io/REPO/assets/gal-3.webp</video:thumbnail_loc>
       <video:title>Auto skola Niprom Nis – obuka vozaca</video:title>
       <video:description>Vozila i poligon auto skole Niprom u Nisu – obuka za B kategoriju.</video:description>
-      <video:content_loc>https://niprom.rs/assets/niprom-video.mp4</video:content_loc>
+      <video:content_loc>https://KORISNIK.github.io/REPO/assets/niprom-video.mp4</video:content_loc>
       <video:duration>20</video:duration>
     </video:video>
   </url>
