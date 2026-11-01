@@ -2,17 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://misicv89-ops.github.io/niprom/</loc>
-    <lastmod>2026-11-01</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image><image:loc>https://misicv89-ops.github.io/niprom/assets/og-image.jpg</image:loc></image:image>
     <image:image><image:loc>https://misicv89-ops.github.io/niprom/assets/hero.webp</image:loc></image:image>
     <image:image><image:loc>https://misicv89-ops.github.io/niprom/assets/o-nama.webp</image:loc></image:image>
     <image:image><image:loc>https://misicv89-ops.github.io/niprom/assets/gal-1.webp</image:loc></image:image>
+    <image:image><image:loc>https://misicv89-ops.github.io/niprom/assets/gal-1-sm.webp</image:loc></image:image>
     <image:image><image:loc>https://misicv89-ops.github.io/niprom/assets/gal-2.webp</image:loc></image:image>
+    <image:image><image:loc>https://misicv89-ops.github.io/niprom/assets/gal-2-sm.webp</image:loc></image:image>
     <image:image><image:loc>https://misicv89-ops.github.io/niprom/assets/gal-3.webp</image:loc></image:image>
+    <image:image><image:loc>https://misicv89-ops.github.io/niprom/assets/gal-3-sm.webp</image:loc></image:image>
     <image:image><image:loc>https://misicv89-ops.github.io/niprom/assets/gal-4.webp</image:loc></image:image>
+    <image:image><image:loc>https://misicv89-ops.github.io/niprom/assets/gal-4-sm.webp</image:loc></image:image>
     <image:image><image:loc>https://misicv89-ops.github.io/niprom/assets/gal-6.webp</image:loc></image:image>
+    <image:image><image:loc>https://misicv89-ops.github.io/niprom/assets/gal-6-sm.webp</image:loc></image:image>
     <video:video>
       <video:thumbnail_loc>https://misicv89-ops.github.io/niprom/assets/video-poster.webp</video:thumbnail_loc>
       <video:title>Auto škola NIPROM I&amp;D Niš – obuka vozača</video:title>

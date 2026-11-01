@@ -5,7 +5,7 @@
   var $ = function (s, c) { return (c || document).querySelector(s); };
   var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
 
-  /* Intro ekran (CSS animacija traje 3s; ovde samo zaključavanje skrola i uklanjanje) */
+  /* Intro ekran (CSS animacija traje 1,5s; ovde samo zaključavanje skrola i uklanjanje) */
   var introOn = false;
   var intro = document.getElementById('nip-intro');
   if (intro) {
@@ -17,7 +17,7 @@
         root.style.overflow = '';
         if (intro.parentNode) intro.parentNode.removeChild(intro);
         introOn = false;
-      }, 3000);
+      }, 1500);
     }
   }
 
@@ -70,7 +70,7 @@
     els.forEach(function (el) { fmt(el, 0); });
     var cio = new IntersectionObserver(function (en) {
       en.forEach(function (e) {
-        if (e.isIntersecting) { cio.unobserve(e.target); setTimeout(function () { run(e.target); }, introOn ? 3100 : 250); }
+        if (e.isIntersecting) { cio.unobserve(e.target); setTimeout(function () { run(e.target); }, introOn ? 1600 : 250); }
       });
     }, { threshold: 0.5 });
     els.forEach(function (el) { cio.observe(el); });
@@ -137,7 +137,7 @@
   function showLb() {
     if (lb == null) { lbBox.hidden = true; return; }
     var img = $('#gal-grid [data-i="' + lb + '"] img');
-    if (img) { lbImg.src = img.currentSrc || img.src; lbImg.alt = img.alt; }
+    if (img) { lbImg.src = img.getAttribute('data-full') || img.currentSrc || img.src; lbImg.alt = img.alt; }
     lbBox.hidden = false;
   }
 
