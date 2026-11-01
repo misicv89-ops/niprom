@@ -1,25 +1,24 @@
-# Auto škola NIPROM I&D — sajt
+# Auto škola NIPROM I&D — statički sajt
 
-Statičan sajt: `index.html` (sav CSS/JS i slike ugrađeni) + `assets/` (video i slike za SEO/deljenje), `sitemap.xml`, `robots.txt`. Bez build koraka.
+Čist HTML/CSS/JS, bez build koraka i bez spoljnih biblioteka.
 
-**Obavezno postavi ceo sadržaj foldera, uključujući `assets/` — inače video u galeriji neće raditi.**
+```
+index.html                 početna
+politika-privatnosti.html  politika privatnosti
+404.html                   stranica za nepostojeće adrese
+robots.txt, sitemap.xml
+favicon.ico, favicon-32.png, apple-touch-icon.png
+css/style.css              fontovi, hover stanja, animacije, responsive
+js/main.js                 intro, pojavljivanje pri skrolu, brojači, galerija, video, forma
+assets/                    slike (WebP), logo, og-image, video + poster
+fonts/                     Space Grotesk i IBM Plex Sans (woff2, latin + latin-ext)
+```
 
-## Hostovanje na GitHub Pages
+## Pre postavljanja zameni
 
-1. Repo `misicv89-ops/niprom` — ubaci sadržaj ovog foldera u koren repoa.
-2. Push na `main`.
-3. Settings → Pages → Source: **Deploy from a branch**, Branch: `main`, folder: `/ (root)` → Save.
-4. Sajt će biti na https://misicv89-ops.github.io/niprom/ za minut-dva.
+1. `[FORMSUBMIT_ALIAS]` u `index.html` (atribut `action` forme), npr. tvoj FormSubmit alias ili email.
+2. `https://misicv89-ops.github.io/niprom/` → pravi domen (Find & Replace u `index.html`, `politika-privatnosti.html`, `404.html`, `sitemap.xml`, `robots.txt`). Svi takvi tagovi su označeni komentarom na vrhu `<head>`.
 
-Za sopstveni domen (npr. `niprom.rs`): Settings → Pages → Custom domain, pa kod registrara
-podesi CNAME na `<korisnik>.github.io`. Kad kupiš domen, dodaj ga u Settings → Pages → Custom domain.
+## GitHub Pages
 
-## SEO i mapa sajta
-
-- `sitemap.xml`, `robots.txt` i `<head>` (og:image, og:url, logo) koriste adresu https://misicv89-ops.github.io/niprom/. Ako se promeni (npr. sopstveni domen), zameni je u sva tri.
-- Slanje mape: Google Search Console → Dodaj svojstvo (domen) → verifikuj → Sitemaps → unesi `sitemap.xml` → Pošalji.
-- Bing Webmaster Tools → Uvezi iz Search Console (ili Sitemaps → `https://misicv89-ops.github.io/niprom/sitemap.xml`).
-
-## Izmene sadržaja
-
-Tekst, cene i telefone menjaj direktno u `index.html` (ili u izvornom projektu, pa ponovo eksportuj).
+Ubaci sadržaj ovog foldera u koren repoa → Settings → Pages → Deploy from a branch → `main` / `(root)`.

@@ -1,0 +1,140 @@
+/* NIPROM I&D — stilovi. Većina rasporeda je u style atributima u HTML-u (namerno, radi identičnog izgleda). */
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:400;font-display:swap;src:url(../fonts/ibm-plex-sans-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:400;font-display:swap;src:url(../fonts/ibm-plex-sans-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:500;font-display:swap;src:url(../fonts/ibm-plex-sans-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:500;font-display:swap;src:url(../fonts/ibm-plex-sans-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:600;font-display:swap;src:url(../fonts/ibm-plex-sans-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:600;font-display:swap;src:url(../fonts/ibm-plex-sans-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400;font-display:swap;src:url(../fonts/space-grotesk-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400;font-display:swap;src:url(../fonts/space-grotesk-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:500;font-display:swap;src:url(../fonts/space-grotesk-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:500;font-display:swap;src:url(../fonts/space-grotesk-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:700;font-display:swap;src:url(../fonts/space-grotesk-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:700;font-display:swap;src:url(../fonts/space-grotesk-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+
+html, body { margin:0; padding:0; background:#FBFCFE; }
+body.nf { background:#0A1533; }
+* { box-sizing:border-box; }
+a { color:#1441E8; text-decoration:none; }
+a:hover { color:#0A1533; }
+::selection { background:#1441E8; color:#fff; }
+[hidden] { display:none !important; }
+@media (max-width:719.98px) { [data-if="wide"] { display:none !important; } }
+
+/* Hover / focus stanja */
+.hv1:hover{background:#1441E8 !important;color:#fff !important}
+.hv2:hover{background:#fff !important;color:#0A1533 !important}
+.hv3:hover{background:rgba(255,255,255,0.1) !important;color:#fff !important}
+.hv4:hover{background:#0A1533 !important;color:#fff !important}
+.hv5:hover{background:rgba(255,255,255,0.12) !important;color:#fff !important}
+.hv6:hover{transform:translateY(-3px) !important;box-shadow:0 20px 40px -24px rgba(10,21,51,0.35) !important}
+.hv7:hover{transform:scale(1.04) !important}
+.hv8:hover{border-color:#1441E8 !important;color:#1441E8 !important}
+.fc9:focus{outline:none !important;border-color:#1441E8 !important;box-shadow:0 0 0 3px rgba(20,65,232,0.15) !important}
+.hv10:hover{background:#0A1533 !important}
+.hv11:hover{color:#1441E8 !important}
+.hv12:hover{color:#fff !important}
+.hv13:hover{color:#0A1533 !important}
+
+/* Animacije i responsive (prenete iz originala) */
+@keyframes nipromRise { from { opacity:0; transform:translateY(18px); } to { opacity:1; transform:none; } }
+@keyframes nipromDash { to { background-position:-120px 0; } }
+@keyframes nipromMarquee { from { transform:translateX(0); } to { transform:translateX(-50%); } }
+#side-road { display:none; }
+@keyframes nipromPulse { 0% { box-shadow:0 0 0 0 rgba(77,240,169,0.75), 0 0 6px 1px rgba(77,240,169,0.9); } 70% { box-shadow:0 0 0 9px rgba(77,240,169,0), 0 0 10px 2px rgba(77,240,169,0.6); } 100% { box-shadow:0 0 0 0 rgba(77,240,169,0), 0 0 6px 1px rgba(77,240,169,0.9); } }
+#live-dot { animation:nipromPulse 1.8s ease-out infinite; }
+@keyframes nipIntroSq { 0% { transform:scale(0) rotate(-200deg); border-radius:50%; } 70% { transform:scale(1.12) rotate(8deg); } 100% { transform:scale(1) rotate(0); border-radius:24px; } }
+@keyframes nipIntroL { 0% { opacity:0; transform:translateY(60%) rotate(10deg); filter:blur(6px); } 100% { opacity:1; transform:none; filter:none; } }
+@keyframes nipIntroDot { 0% { transform:scale(0); } 100% { transform:scale(1); } }
+@keyframes nipIntroBar { to { transform:scaleX(1); } }
+@keyframes nipIntroOut { 0%, 85% { clip-path:inset(0 0 0 0); } 100% { clip-path:inset(0 0 100% 0); } }
+@media (prefers-reduced-motion:reduce) { #nip-intro { display:none !important; } }
+@keyframes nipGlow { 0% { transform:rotate(0deg) scale(1); } 50% { transform:rotate(180deg) scale(1.15); } 100% { transform:rotate(360deg) scale(1); } }
+#lok-glow { background:radial-gradient(closest-side at 30% 30%, rgba(120,170,255,0.75), transparent), radial-gradient(closest-side at 72% 68%, rgba(10,21,51,0.65), transparent), radial-gradient(closest-side at 70% 25%, rgba(77,240,169,0.25), transparent); animation:nipGlow 14s linear infinite; }
+#lok-road { background:repeating-linear-gradient(90deg, #fff 0 34px, transparent 34px 60px); background-size:120px 4px; animation:nipromDash 1.6s linear infinite; }
+#vrh-glow { background:radial-gradient(closest-side at 30% 30%, rgba(20,65,232,0.55), transparent), radial-gradient(closest-side at 72% 68%, rgba(77,140,255,0.35), transparent), radial-gradient(closest-side at 70% 25%, rgba(77,240,169,0.12), transparent); animation:nipGlow 22s linear infinite; }
+#vrh-road { background:repeating-linear-gradient(90deg, #fff 0 34px, transparent 34px 60px); background-size:120px 4px; animation:nipromDash 1.6s linear infinite; }
+@media (prefers-reduced-motion:reduce) { #lok-glow, #lok-road, #vrh-glow, #vrh-road { animation:none; } }
+@media (min-width:721px) { #vrh-glow, #vrh-road { display:none; } }
+#kat-glow { background:radial-gradient(closest-side at 30% 30%, rgba(120,170,255,0.75), transparent), radial-gradient(closest-side at 72% 68%, rgba(10,21,51,0.65), transparent), radial-gradient(closest-side at 70% 25%, rgba(77,240,169,0.25), transparent); animation:nipGlow 14s linear infinite; }
+#kat-road { background:repeating-linear-gradient(90deg, #fff 0 34px, transparent 34px 60px); background-size:120px 4px; animation:nipromDash 1.6s linear infinite; }
+@media (prefers-reduced-motion:reduce) { #kat-glow, #kat-road { animation:none; } }
+#cen-glow { background:radial-gradient(closest-side at 30% 30%, rgba(120,170,255,0.75), transparent), radial-gradient(closest-side at 72% 68%, rgba(10,21,51,0.65), transparent), radial-gradient(closest-side at 70% 25%, rgba(77,240,169,0.25), transparent); animation:nipGlow 14s linear infinite; }
+#cen-road { background:repeating-linear-gradient(90deg, #fff 0 34px, transparent 34px 60px); background-size:120px 4px; animation:nipromDash 1.6s linear infinite; }
+@media (prefers-reduced-motion:reduce) { #cen-glow, #cen-road { animation:none; } }
+@media (max-width:900px) { #kat-grid { grid-template-columns:minmax(0,1fr) !important; } }
+@media (max-width:720px) { #kat-req { display:grid !important; grid-template-columns:minmax(0,max-content); justify-content:center; gap:14px !important; text-align:left; } #kat-req > span { justify-content:flex-start; } #kat-req > span:first-child { justify-self:center; text-align:center; margin-bottom:2px; } }
+[data-hw="0"] { opacity:0; transform:translateY(-140%) rotate(-4deg); }
+[data-hw="1"] { opacity:1; transform:none; transition:transform .8s cubic-bezier(.34,1.56,.64,1), opacity .35s ease-out; }
+@keyframes nipromNudge { 0%, 100% { transform:translateX(0); } 50% { transform:translateX(5px); } }
+#cen-arrow { animation:nipromNudge 1.2s ease-in-out infinite; }
+#cen-call::after { content:""; position:absolute; top:0; bottom:0; left:0; width:45%; background:linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 100%); animation:nipromShine 3.2s ease-in-out infinite 1.2s; pointer-events:none; }
+@media (prefers-reduced-motion:reduce) { #cen-arrow { animation:none; } #cen-call::after { display:none; } }
+@keyframes nipPlane { 0%, 55%, 100% { transform:translate(0,0) rotate(0); opacity:1; } 70% { transform:translate(14px,-14px) rotate(8deg); opacity:0; } 71% { transform:translate(-14px,14px); opacity:0; } 85% { transform:translate(0,0); opacity:1; } }
+@keyframes nipBtnPulse { 0% { box-shadow:0 0 0 0 rgba(20,65,232,0.45), 0 12px 26px -14px rgba(20,65,232,0.9); } 70% { box-shadow:0 0 0 14px rgba(20,65,232,0), 0 12px 26px -14px rgba(20,65,232,0.9); } 100% { box-shadow:0 0 0 0 rgba(20,65,232,0), 0 12px 26px -14px rgba(20,65,232,0.9); } }
+#send-btn { animation:nipBtnPulse 2.2s ease-out infinite; }
+#send-btn:not(:disabled) #send-plane { animation:nipPlane 2.2s ease-in-out infinite; }
+#send-btn::after { content:""; position:absolute; top:0; bottom:0; left:0; width:40%; background:linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.35) 50%, rgba(255,255,255,0) 100%); animation:nipromShine 3.2s ease-in-out infinite .6s; pointer-events:none; }
+#send-btn:disabled { animation:none; }
+@media (prefers-reduced-motion:reduce) { #send-btn, #send-plane { animation:none !important; } #send-btn::after { display:none; } }
+@keyframes nipromShine { 0% { transform:translateX(-120%) skewX(-20deg); } 55%, 100% { transform:translateX(260%) skewX(-20deg); } }
+#nav-call::after { content:""; position:absolute; top:0; bottom:0; left:0; width:45%; background:linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.45) 50%, rgba(255,255,255,0) 100%); animation:nipromShine 3.2s ease-in-out infinite; pointer-events:none; }
+@media (prefers-reduced-motion:reduce) { #nav-call::after { animation:none; display:none; } }
+@keyframes nipPhoneHop { 0%, 40%, 100% { transform:translateY(0) rotate(0); } 8% { transform:translateY(-6px) rotate(-14deg); } 16% { transform:translateY(0) rotate(12deg); } 22% { transform:translateY(-3px) rotate(-8deg); } 30% { transform:translateY(0) rotate(4deg); } }
+#nav-phone, [data-phone-hop] { animation:nipPhoneHop 1.6s ease-in-out infinite; }
+@media (prefers-reduced-motion:reduce) { #nav-phone, [data-phone-hop] { animation:none; } }
+@media (prefers-reduced-motion:reduce) { #live-dot { animation:none; } }
+@keyframes nipBoom { 0%,100% { transform:rotate(-6deg) scale(1); } 50% { transform:rotate(-6deg) scale(1.08); } }
+#akcija-badge { animation:nipBoom 1.6s ease-in-out infinite; }
+#akcija-road { background:repeating-linear-gradient(90deg, #fff 0 34px, transparent 34px 60px); background-size:120px 4px; animation:nipromDash 1.6s linear infinite; }
+@media (prefers-reduced-motion:reduce) { #akcija-badge, #akcija-road { animation:none; } }
+#marquee-track { animation:nipromMarquee 64s linear infinite; }
+@media (prefers-reduced-motion:no-preference) {
+  [data-rev] { opacity:0; transform:translateY(26px); transition:opacity .7s cubic-bezier(.22,.7,.3,1), transform .7s cubic-bezier(.22,.7,.3,1); }
+  [data-rev="1"] { opacity:1; transform:none; }
+}
+@media (max-width:720px) {
+  #lok-grid { grid-template-columns:1fr !important; }
+  #lok-central { grid-column:auto !important; grid-row:auto !important; order:-1; padding:32px 22px !important; }
+  #lok-grid [data-lok] { grid-column:auto !important; grid-row:auto !important; }
+  #onama-stats { grid-template-columns:1fr !important; }
+  #gal-grid { grid-template-columns:1fr 1fr !important; grid-auto-rows:150px !important; gap:10px !important; }
+  #gal-grid [data-g="a"], #gal-grid [data-g="w"] { grid-column:span 2 !important; }
+  #gal-grid > div { border-radius:16px !important; }
+  #cen-items { align-items:center; padding:28px 20px !important; }
+  #cen-items > [data-mrow] { flex-direction:column; align-items:center; gap:4px !important; width:100%; text-align:center; }
+  #cen-call { align-self:center !important; margin-top:8px !important; }
+  #cen-top { text-align:center; }
+  #cen-price { justify-content:center !important; width:100%; }
+  #gal-grid [data-g="v"] { grid-column:span 2 !important; grid-row:span 4 !important; order:-1; }
+  #galerija { text-align:center; }
+  #galerija h2 { margin-left:auto; margin-right:auto; }
+  #vrh, #o-nama, #kategorije, #cenovnik, #kontakt, footer { text-align:center; }
+  #vrh p, #o-nama p, #cenovnik p, #kontakt p, #kategorije p,
+  #vrh h1, #o-nama h2, #kategorije h2, #cenovnik h2, #kontakt h2 { margin-left:auto; margin-right:auto; }
+  [data-mrow] { justify-content:center !important; }
+  #kontakt textarea, #kontakt input { text-align:center; }
+  #marquee-track { animation-duration:40s !important; }
+  #side-road { display:block; }
+  #marquee-track > div { font-size:14px !important; padding:0 20px !important; }
+  #vrh [style*="position:absolute;left:-14px"] { left:50% !important; transform:translateX(-50%); bottom:-24px !important; }
+  #cenovnik [data-mrow] span:last-child { white-space:nowrap; }
+  #akcija { padding:56px 16px 0 !important; }
+  #akcija > div { text-align:center; padding:36px 20px 52px !important; grid-template-columns:minmax(0,1fr) !important; gap:28px !important; border-radius:24px !important; }
+  #akcija h2 { font-size:34px !important; }
+  #akcija p { font-size:16px !important; }
+  #akcija [data-mrow] a { width:100%; text-align:center; box-sizing:border-box; }
+  #akcija > div > div > div { padding:22px 18px !important; }
+  #akcija > div > div > div > div:nth-child(2) { font-size:21px !important; }
+  #akcija > div > div { justify-items:center !important; }
+  #akcija p { margin-inline:auto !important; }
+  #akcija [data-mrow] { justify-content:center !important; }
+}
+
+/* 404 */
+#nf-road { background:repeating-linear-gradient(90deg, #fff 0 34px, transparent 34px 60px); background-size:120px 4px; animation:nipromDash 1.6s linear infinite; }
+@media (prefers-reduced-motion:reduce) { #nf-road { animation:none; } }
+
+@media (prefers-reduced-motion:reduce) {
+  *, *::before, *::after { animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; }
+}
