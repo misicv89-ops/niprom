@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://KORISNIK.github.io/REPO/sitemap.xml
+Sitemap: https://misicv89-ops.github.io/niprom/sitemap.xml

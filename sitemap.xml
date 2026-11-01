@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
-    <loc>https://KORISNIK.github.io/REPO/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <loc>https://misicv89-ops.github.io/niprom/</loc>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <image:image><image:loc>https://KORISNIK.github.io/REPO/assets/hero.jpg</image:loc></image:image>
-    <image:image><image:loc>https://KORISNIK.github.io/REPO/assets/o-nama.jpg</image:loc></image:image>
-    <image:image><image:loc>https://KORISNIK.github.io/REPO/assets/gal-1.webp</image:loc></image:image>
-    <image:image><image:loc>https://KORISNIK.github.io/REPO/assets/gal-2.webp</image:loc></image:image>
-    <image:image><image:loc>https://KORISNIK.github.io/REPO/assets/gal-3.webp</image:loc></image:image>
-    <image:image><image:loc>https://KORISNIK.github.io/REPO/assets/gal-4.webp</image:loc></image:image>
-    <image:image><image:loc>https://KORISNIK.github.io/REPO/assets/gal-6.webp</image:loc></image:image>
+    <image:image><image:loc>https://misicv89-ops.github.io/niprom/assets/og-image.jpg</image:loc></image:image>
+    <image:image><image:loc>https://misicv89-ops.github.io/niprom/assets/hero.jpg</image:loc></image:image>
+    <image:image><image:loc>https://misicv89-ops.github.io/niprom/assets/o-nama.jpg</image:loc></image:image>
+    <image:image><image:loc>https://misicv89-ops.github.io/niprom/assets/gal-1.webp</image:loc></image:image>
+    <image:image><image:loc>https://misicv89-ops.github.io/niprom/assets/gal-2.webp</image:loc></image:image>
+    <image:image><image:loc>https://misicv89-ops.github.io/niprom/assets/gal-3.webp</image:loc></image:image>
+    <image:image><image:loc>https://misicv89-ops.github.io/niprom/assets/gal-4.webp</image:loc></image:image>
+    <image:image><image:loc>https://misicv89-ops.github.io/niprom/assets/gal-6.webp</image:loc></image:image>
     <video:video>
-      <video:thumbnail_loc>https://KORISNIK.github.io/REPO/assets/gal-3.webp</video:thumbnail_loc>
-      <video:title>Auto skola Niprom Nis – obuka vozaca</video:title>
-      <video:description>Vozila i poligon auto skole Niprom u Nisu – obuka za B kategoriju.</video:description>
-      <video:content_loc>https://KORISNIK.github.io/REPO/assets/niprom-video.mp4</video:content_loc>
+      <video:thumbnail_loc>https://misicv89-ops.github.io/niprom/assets/gal-3.webp</video:thumbnail_loc>
+      <video:title>Auto skola NIPROM I&amp;D Nis – obuka vozaca</video:title>
+      <video:description>Vozila i poligon auto skole NIPROM I&amp;D u Nisu – obuka za B kategoriju.</video:description>
+      <video:content_loc>https://misicv89-ops.github.io/niprom/assets/niprom-video.mp4</video:content_loc>
       <video:duration>20</video:duration>
     </video:video>
   </url>
