@@ -166,7 +166,8 @@
     #marquee-track { animation-duration:40s !important; }
     #side-road { display:block; }
     #marquee-track > div { font-size:14px !important; padding:0 20px !important; }
-    #vrh [style*="position:absolute;left:-14px"] { left:50% !important; transform:translateX(-50%); bottom:-24px !important; }
+    #vrh-stats { left:50% !important; transform:translateX(-50%); bottom:-24px !important; }
+    #vrh-stats div { white-space:nowrap; }
     #cenovnik [data-mrow] span:last-child { white-space:nowrap; }
     #akcija { padding:56px 16px 0 !important; }
     #akcija > div { text-align:center; padding:36px 20px 52px !important; grid-template-columns:minmax(0,1fr) !important; gap:28px !important; border-radius:24px !important; }
@@ -183,7 +184,7 @@
     #vrh-badge { order:1; align-self:center; }
     #vrh-h1 { order:2; margin-top:16px !important; }
     #vrh-media { order:3; width:100%; margin:22px 0 22px; }
-    #vrh-p { order:4; margin-top:34px !important; font-size:17px !important; }
+    #vrh-p { order:4; margin-top:34px !important; font-size:17px !important; max-width:310px !important; margin-left:auto !important; margin-right:auto !important; padding:0 4px; }
     #vrh-btns { order:5; margin-top:22px !important; }
     #o-nama, #galerija, #cenovnik { padding:68px 20px !important; }
     #kategorije > div, #kontakt > div { padding:68px 20px !important; }
@@ -273,7 +274,7 @@
         <div style="aspect-ratio:4/3;border-radius:22px;border:1px solid rgba(255,255,255,0.18);overflow:hidden">
           <img src="assets/hero.jpg" alt="Instruktor i polaznica tokom časa vožnje" style="width:100%;height:100%;object-fit:cover;display:block">
         </div>
-        <div data-mrow="" style="position:absolute;left:-14px;bottom:-26px;background:#fff;color:#0A1533;border-radius:16px;padding:16px 20px;box-shadow:0 24px 50px -20px rgba(10,21,51,0.6);display:flex;gap:22px">
+        <div id="vrh-stats" data-mrow="" style="position:absolute;left:-14px;bottom:-26px;background:#fff;color:#0A1533;border-radius:16px;padding:16px 20px;box-shadow:0 24px 50px -20px rgba(10,21,51,0.6);display:flex;gap:22px">
           <div>
             <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:26px;line-height:1" data-count="28" data-fmt="plus" data-mobile="1">28+</div>
             <div style="font-size:12px;color:#5C6A8C;letter-spacing:0.04em">godina rada</div>
