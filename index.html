@@ -139,7 +139,7 @@
     #cen-items { align-items:center; padding:28px 20px !important; }
     #cen-items > [data-mrow] { flex-direction:column; align-items:center; gap:4px !important; width:100%; text-align:center; }
     #cen-call { align-self:center !important; margin-top:8px !important; }
-    #cen-cash { align-self:center !important; }
+    #cen-cash { align-self:center !important; margin-left:auto !important; margin-right:auto !important; }
     #cen-rate { margin-left:auto; margin-right:auto; }
     #cen-top { text-align:center; }
     #cen-price { justify-content:center !important; width:100%; }
@@ -188,7 +188,12 @@
     #onama-h2 { order:2; }
     #onama-media { order:3; aspect-ratio:4/3; min-height:0 !important; margin-top:26px; }
     #onama-p { order:4; margin-top:24px !important; }
-    #onama-features { order:5; }
+    #onama-features { order:5; gap:14px !important; margin-top:28px !important; }
+    #onama-features > div { flex-direction:column; align-items:center !important; text-align:center !important; gap:12px !important; background:#fff !important; border:1px solid #E3E8F5 !important; border-left:1px solid #E3E8F5 !important; border-top:4px solid #007BC2 !important; border-radius:18px !important; padding:24px 20px 22px !important; box-shadow:0 18px 36px -26px rgba(10,21,51,0.45); }
+    #onama-features > div > span:first-child { width:52px !important; height:52px !important; margin:0 !important; border-radius:999px; background:#E8F5FC; }
+    #onama-features > div > span:first-child svg { width:26px; height:26px; }
+    #onama-features > div > span:last-child > span:first-child { font-size:19px !important; }
+    #onama-features > div > span:last-child > span:last-child { font-size:15.5px !important; margin-top:6px !important; color:#2E3A57 !important; max-width:290px; margin-left:auto; margin-right:auto; }
     #onama-stats { order:6; }
     #kategorije h2 { margin-bottom:32px !important; }
     #galerija h2 { margin-bottom:32px !important; }
@@ -197,10 +202,10 @@
     #kat-b-p { max-width:300px; margin:4px auto 0 !important; font-size:15.5px !important; line-height:1.6 !important; text-wrap:balance !important; }
     #kat-b-br { display:block; height:10px; }
     #kat-steps { margin-top:14px; grid-template-columns:repeat(2,minmax(0,1fr)) !important; gap:10px !important; }
-    #kat-steps > div { display:flex !important; flex-direction:column; align-items:center; text-align:center; gap:6px !important; padding:16px 10px !important; border-radius:14px !important; }
-    #kat-steps > div > span { font-size:24px !important; }
-    #kat-steps > div > h3 { margin:4px 0 0 !important; font-size:16px !important; }
-    #kat-steps > div > p { font-size:13px !important; line-height:1.45 !important; }
+    #kat-steps > div { display:flex !important; flex-direction:column; align-items:center; text-align:center; gap:6px !important; padding:18px 10px !important; border-radius:14px !important; }
+    #kat-steps > div > span { font-size:28px !important; }
+    #kat-steps > div > h3 { margin:4px 0 0 !important; font-size:18px !important; line-height:1.2 !important; }
+    #kat-steps > div > p { font-size:15px !important; line-height:1.45 !important; color:#2E3A57 !important; }
   }
 </style>
 </helmet>
@@ -325,24 +330,24 @@
         </div>
         <div id="kat-steps" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));gap:16px">
           <div style="background:#fff;border:1px solid #E3E8F5;border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:10px;transition:transform .3s, box-shadow .3s" style-hover="transform:translateY(-3px);box-shadow:0 20px 40px -24px rgba(10,21,51,0.35)">
-            <span aria-hidden="true" style="color:#007BC2;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:26px;line-height:1;letter-spacing:-0.02em">01</span>
-            <h3 style="font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:700;margin:4px 0 0;letter-spacing:-0.01em;color:#0A1533">Teorijska nastava</h3>
-            <p style="margin:0;font-size:15px;line-height:1.55;color:#43506F;text-wrap:pretty">Časovi teorije u našoj učionici na Sinđelićevom trgu, u centru grada.</p>
+            <span aria-hidden="true" style="color:#007BC2;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:30px;line-height:1;letter-spacing:-0.02em">01</span>
+            <h3 style="font-family:'Space Grotesk',sans-serif;font-size:21px;font-weight:700;margin:4px 0 0;letter-spacing:-0.01em;color:#0A1533">Teorijska nastava</h3>
+            <p style="margin:0;font-size:17px;line-height:1.55;color:#2E3A57;text-wrap:pretty">Časovi teorije u našoj učionici na Sinđelićevom trgu, u centru grada.</p>
           </div>
           <div style="background:#fff;border:1px solid #E3E8F5;border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:10px;transition:transform .3s, box-shadow .3s" style-hover="transform:translateY(-3px);box-shadow:0 20px 40px -24px rgba(10,21,51,0.35)">
-            <span aria-hidden="true" style="color:#007BC2;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:26px;line-height:1;letter-spacing:-0.02em">02</span>
-            <h3 style="font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:700;margin:4px 0 0;letter-spacing:-0.01em;color:#0A1533">Praktična obuka</h3>
-            <p style="margin:0;font-size:15px;line-height:1.55;color:#43506F;text-wrap:pretty">40 časova vožnje na poligonu i u gradu, u terminima koji ti odgovaraju.</p>
+            <span aria-hidden="true" style="color:#007BC2;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:30px;line-height:1;letter-spacing:-0.02em">02</span>
+            <h3 style="font-family:'Space Grotesk',sans-serif;font-size:21px;font-weight:700;margin:4px 0 0;letter-spacing:-0.01em;color:#0A1533">Praktična obuka</h3>
+            <p style="margin:0;font-size:17px;line-height:1.55;color:#2E3A57;text-wrap:pretty">40 časova vožnje na poligonu i u gradu, u terminima koji ti odgovaraju.</p>
           </div>
           <div style="background:#fff;border:1px solid #E3E8F5;border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:10px;transition:transform .3s, box-shadow .3s" style-hover="transform:translateY(-3px);box-shadow:0 20px 40px -24px rgba(10,21,51,0.35)">
-            <span aria-hidden="true" style="color:#007BC2;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:26px;line-height:1;letter-spacing:-0.02em">03</span>
-            <h3 style="font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:700;margin:4px 0 0;letter-spacing:-0.01em;color:#0A1533">Teorijski ispit</h3>
-            <p style="margin:0;font-size:15px;line-height:1.55;color:#43506F;text-wrap:pretty">Test sa zvaničnim pitanjima MUP-a, posle završene teorijske nastave.</p>
+            <span aria-hidden="true" style="color:#007BC2;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:30px;line-height:1;letter-spacing:-0.02em">03</span>
+            <h3 style="font-family:'Space Grotesk',sans-serif;font-size:21px;font-weight:700;margin:4px 0 0;letter-spacing:-0.01em;color:#0A1533">Teorijski ispit</h3>
+            <p style="margin:0;font-size:17px;line-height:1.55;color:#2E3A57;text-wrap:pretty">Test sa zvaničnim pitanjima MUP-a, posle završene teorijske nastave.</p>
           </div>
           <div style="background:#fff;border:1px solid #E3E8F5;border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:10px;transition:transform .3s, box-shadow .3s" style-hover="transform:translateY(-3px);box-shadow:0 20px 40px -24px rgba(10,21,51,0.35)">
-            <span aria-hidden="true" style="color:#007BC2;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:26px;line-height:1;letter-spacing:-0.02em">04</span>
-            <h3 style="font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:700;margin:4px 0 0;letter-spacing:-0.01em;color:#0A1533">Praktični ispit</h3>
-            <p style="margin:0;font-size:15px;line-height:1.55;color:#43506F;text-wrap:pretty">Poligon i vožnja u saobraćaju, pred ispitivačima auto škole i MUP-a.</p>
+            <span aria-hidden="true" style="color:#007BC2;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:30px;line-height:1;letter-spacing:-0.02em">04</span>
+            <h3 style="font-family:'Space Grotesk',sans-serif;font-size:21px;font-weight:700;margin:4px 0 0;letter-spacing:-0.01em;color:#0A1533">Praktični ispit</h3>
+            <p style="margin:0;font-size:17px;line-height:1.55;color:#2E3A57;text-wrap:pretty">Poligon i vožnja u saobraćaju, pred ispitivačima auto škole i MUP-a.</p>
           </div>
         </div>
       </div>
