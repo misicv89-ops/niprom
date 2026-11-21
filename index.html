@@ -67,6 +67,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
 <style>
   html, body { margin:0; padding:0; background:#FBFCFE; }
+  html { -webkit-text-size-adjust:100%; text-size-adjust:100%; }
+  html, body { overflow-x:clip; max-width:100%; }
+  img, video, iframe { max-width:100%; }
   * { box-sizing:border-box; }
   a { color:#007BC2; text-decoration:none; }
   a:hover { color:#0A1533; }
@@ -174,7 +177,8 @@
     #marquee-track > div { font-size:14px !important; padding:0 20px !important; }
     #vrh-stats { left:50% !important; transform:translateX(-50%); bottom:-24px !important; }
     #vrh-stats div { white-space:nowrap; }
-    #cenovnik [data-mrow] span:last-child { white-space:nowrap; }
+    #cenovnik [data-mrow] > span:last-child { white-space:nowrap; }
+    #cenovnik [data-mrow] > span:first-child, #cenovnik [data-mrow] > span:first-child span { white-space:normal !important; overflow-wrap:break-word; max-width:100%; }
     #akcija { padding:0 16px 56px !important; }
     #akcija > div { text-align:center; padding:36px 20px 52px !important; grid-template-columns:minmax(0,1fr) !important; gap:28px !important; border-radius:24px !important; }
     #akcija h2 { font-size:34px !important; }
@@ -270,7 +274,7 @@
     <div style="position:absolute;inset:0;background:radial-gradient(900px 500px at 78% 18%, rgba(0,123,194,0.55), transparent 62%)"></div>
     <div id="vrh-glow" aria-hidden="true" style="position:absolute;inset:-50%;pointer-events:none"></div>
     <div id="vrh-road" aria-hidden="true" style="position:absolute;left:0;right:0;bottom:22px;height:4px;pointer-events:none;opacity:0.22"></div>
-    <div id="vrh-grid" style="position:relative;max-width:1200px;margin:0 auto;padding:96px 24px 84px;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:56px;align-items:center">
+    <div id="vrh-grid" style="position:relative;max-width:1200px;margin:0 auto;padding:96px 24px 84px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:56px;align-items:center">
       <div id="vrh-text" style="animation:nipromRise .7s ease both">
         <div id="vrh-badge" style="display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(255,255,255,0.22);border-radius:999px;padding:7px 14px;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;font-weight:600;color:#8FD6FF">
           <span id="live-dot" style="width:7px;height:7px;border-radius:99px;background:#4DF0A9;box-shadow:0 0 6px 1px rgba(77,240,169,0.9)"></span>Upis je otvoren — Niš
@@ -368,7 +372,7 @@
   </section>
 
   <section id="o-nama" style="max-width:1200px;margin:0 auto;padding:96px 24px">
-    <div id="onama-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:56px;align-items:stretch">
+    <div id="onama-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:56px;align-items:stretch">
       <div id="onama-text">
         <div id="onama-label" style="font-size:13px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#007BC2;margin-top:-8px;margin-bottom:22px">O nama</div>
         <h2 id="onama-h2" style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(32px,4vw,46px);line-height:1.05;letter-spacing:-0.03em;margin:0;text-wrap:balance">Više od vožnje.</h2>
@@ -383,7 +387,7 @@
             <span><span style="display:block;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:18px;color:#0A1533;line-height:1.25">Ti biraš instruktora i termin</span><span style="display:block;font-size:15px;line-height:1.55;color:#43506F;margin-top:4px">Instruktora vožnje i vreme časova biraš sam, tako da se obuka uklopi u tvoje obaveze.</span></span>
           </div>
         </div>
-        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:18px;margin-top:34px" id="onama-stats">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr));gap:18px;margin-top:34px" id="onama-stats">
           <div style="border:1px solid #E3E8F5;border-radius:16px;padding:18px;background:#fff">
             <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:28px;color:#007BC2;line-height:1" data-count="1800" data-fmt="dot">1.800</div>
             <div style="font-size:13px;color:#5C6A8C;margin-top:4px">položenih polaznika</div>
@@ -436,7 +440,7 @@
   </section>
 
   <section id="akcija" style="max-width:1200px;margin:0 auto;padding:0 24px 80px">
-    <div style="position:relative;overflow:hidden;isolation:isolate;border-radius:28px;background:#007BC2;color:#fff;padding:48px 40px 60px;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:36px;align-items:center;box-shadow:0 30px 60px -28px rgba(0,123,194,0.75)">
+    <div style="position:relative;overflow:hidden;isolation:isolate;border-radius:28px;background:#007BC2;color:#fff;padding:48px 40px 60px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:36px;align-items:center;box-shadow:0 30px 60px -28px rgba(0,123,194,0.75)">
       <div id="akcija-road" aria-hidden="true" style="position:absolute;left:0;right:0;bottom:24px;height:4px;z-index:-1;opacity:0.3;pointer-events:none"></div>
       <div style="display:grid;gap:18px;justify-items:start">
         <span id="akcija-badge" style="display:inline-block;background:#4DF0A9;color:#0A1533;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15px;letter-spacing:0.12em;text-transform:uppercase;border-radius:999px;padding:9px 18px;box-shadow:0 10px 24px -10px rgba(10,21,51,0.6)">Akcija do 31.12.</span>
@@ -470,7 +474,7 @@
       </div>
       <p style="margin:0;font-size:15px;color:#5C6A8C;max-width:340px">Plaćanje u 12 mesečnih rata, popust za plaćanje u kešu i mogućnost plaćanja preko administrativne zabrane i čekovima.</p>
     </div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:24px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr));gap:24px">
       <div id="cen-top" style="border-radius:22px;padding:34px 34px 52px;background:#007BC2;color:#fff;position:relative;overflow:hidden;isolation:isolate;display:flex;flex-direction:column;gap:14px;box-shadow:0 30px 60px -28px rgba(0,123,194,0.75)">
         <div id="cen-glow" aria-hidden="true" style="position:absolute;inset:-40%;z-index:-1;pointer-events:none"></div>
         <div id="cen-road" aria-hidden="true" style="position:absolute;left:0;right:0;bottom:22px;height:4px;z-index:-1;pointer-events:none;opacity:0.35"></div>
@@ -510,7 +514,7 @@
   </section>
 
   <section id="kontakt" style="background:#fff;border-top:1px solid #E3E8F5">
-    <div style="max-width:1200px;margin:0 auto;padding:96px 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:48px;align-items:stretch">
+    <div style="max-width:1200px;margin:0 auto;padding:96px 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:48px;align-items:stretch">
       <div>
         <div style="font-size:13px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#007BC2">Kontakt</div>
         <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(32px,4vw,46px);line-height:1.05;letter-spacing:-0.03em;margin:16px 0 0;text-wrap:balance">Javi se, upis traje 5 minuta.</h2>
