@@ -6,13 +6,15 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image><image:loc>https://misicv89-ops.github.io/niprom/assets/og-image.jpg</image:loc></image:image>
-    <image:image><image:loc>https://misicv89-ops.github.io/niprom/assets/hero.jpg</image:loc></image:image>
-    <image:image><image:loc>https://misicv89-ops.github.io/niprom/assets/o-nama.jpg</image:loc></image:image>
+    <image:image><image:loc>https://misicv89-ops.github.io/niprom/assets/hero-auto.webp</image:loc></image:image>
+    <image:image><image:loc>https://misicv89-ops.github.io/niprom/assets/o-nama-fasada.webp</image:loc></image:image>
     <image:image><image:loc>https://misicv89-ops.github.io/niprom/assets/gal-1.webp</image:loc></image:image>
     <image:image><image:loc>https://misicv89-ops.github.io/niprom/assets/gal-2.webp</image:loc></image:image>
     <image:image><image:loc>https://misicv89-ops.github.io/niprom/assets/gal-3.webp</image:loc></image:image>
     <image:image><image:loc>https://misicv89-ops.github.io/niprom/assets/gal-4.webp</image:loc></image:image>
     <image:image><image:loc>https://misicv89-ops.github.io/niprom/assets/gal-6.webp</image:loc></image:image>
+    <image:image><image:loc>https://misicv89-ops.github.io/niprom/assets/gal-7.webp</image:loc></image:image>
+    <image:image><image:loc>https://misicv89-ops.github.io/niprom/assets/gal-8.webp</image:loc></image:image>
     <video:video>
       <video:thumbnail_loc>https://misicv89-ops.github.io/niprom/assets/gal-3.webp</video:thumbnail_loc>
       <video:title>Auto škola NIPROM I&amp;D Niš – obuka vozača</video:title>
