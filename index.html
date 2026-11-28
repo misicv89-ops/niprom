@@ -186,7 +186,9 @@
     #onama-text { display:contents; }
     #onama-label { order:1; margin-top:0 !important; margin-bottom:16px !important; }
     #onama-h2 { order:2; }
-    #onama-media { order:3; aspect-ratio:4/3; min-height:0 !important; margin-top:26px; }
+    #onama-media { order:3; min-height:0 !important; margin-top:26px; gap:10px !important; }
+    #onama-facade { flex:none !important; aspect-ratio:4/3; min-height:0 !important; }
+    #onama-media > div:last-child { gap:10px !important; }
     #onama-p { order:4; margin-top:24px !important; }
     #onama-features { order:5; gap:14px !important; margin-top:28px !important; }
     #onama-features > div { flex-direction:column; align-items:center !important; text-align:center !important; gap:12px !important; background:#fff !important; border:1px solid #E3E8F5 !important; border-left:1px solid #E3E8F5 !important; border-top:4px solid #007BC2 !important; border-radius:18px !important; padding:24px 20px 22px !important; box-shadow:0 18px 36px -26px rgba(10,21,51,0.45); }
@@ -272,8 +274,8 @@
         </div>
       </div>
       <div id="vrh-media" style="position:relative;animation:nipromRise .9s ease both">
-        <div style="aspect-ratio:4/3;border-radius:22px;border:1px solid rgba(255,255,255,0.18);overflow:hidden">
-          <img src="assets/hero-auto.webp" alt="VW Polo auto škole NIPROM I&amp;D ispred Niške tvrđave u sumrak" style="width:100%;height:100%;object-fit:cover;object-position:85% 50%;display:block">
+        <div style="aspect-ratio:1672/941;border-radius:22px;border:1px solid rgba(255,255,255,0.18);overflow:hidden">
+          <img src="assets/hero-auto.webp" alt="VW Polo auto škole NIPROM I&amp;D ispred Niške tvrđave u sumrak" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%;display:block">
         </div>
         <div id="vrh-stats" data-mrow="" style="position:absolute;left:-14px;bottom:-26px;background:#fff;color:#0A1533;border-radius:16px;padding:16px 20px;box-shadow:0 24px 50px -20px rgba(10,21,51,0.6);display:flex;gap:22px">
           <div>
@@ -385,10 +387,23 @@
           </div>
         </div>
       </div>
-      <div id="onama-media" style="align-self:stretch;min-height:100%;border-radius:22px;border:1px solid #E3E8F5;overflow:hidden;background:#E8F5FC;line-height:0">
-        <img src="assets/o-nama-fasada.webp" alt="Ulaz u auto školu NIPROM I&amp;D na Sinđelićevom trgu 4 u Nišu" style="width:100%;height:100%;object-fit:cover;object-position:60% 50%;display:block">
+      <div id="onama-media" style="align-self:stretch;display:flex;flex-direction:column;gap:14px;min-height:100%">
+        <div id="onama-facade" data-o="0" onClick="{{ openOlb }}" style="cursor:zoom-in;flex:1;min-height:260px;border-radius:22px;border:1px solid #E3E8F5;overflow:hidden;background:#E8F5FC;line-height:0"><img src="assets/o-nama-fasada.webp" alt="Ulaz u auto školu NIPROM I&amp;D na Sinđelićevom trgu 4 u Nišu" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:60% 50%;display:block"></div>
+        <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px">
+          <div data-o="1" onClick="{{ openOlb }}" style="cursor:zoom-in;aspect-ratio:4/3;border-radius:18px;border:1px solid #E3E8F5;overflow:hidden;background:#E8F5FC;line-height:0"><img src="assets/ucionica-1.webp" alt="Učionica za teorijsku nastavu sa računarima i ekranom" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%;display:block"></div>
+          <div data-o="2" onClick="{{ openOlb }}" style="cursor:zoom-in;aspect-ratio:4/3;border-radius:18px;border:1px solid #E3E8F5;overflow:hidden;background:#E8F5FC;line-height:0"><img src="assets/ucionica-b.webp" alt="Učionica auto škole NIPROM I&amp;D sa radnim mestima za polaznike" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%;display:block"></div>
+        </div>
       </div>
     </div>
+
+    <sc-if value="{{ olbOpen }}" hint-placeholder-val="{{ false }}">
+      <div onClick="{{ closeOlb }}" style="position:fixed;inset:0;z-index:1000;background:rgba(10,21,51,0.92);display:flex;align-items:center;justify-content:center;padding:24px;cursor:zoom-out">
+        <img src="{{ olbSrc }}" alt="{{ olbAlt }}" style="max-width:100%;max-height:100%;object-fit:contain;border-radius:16px;display:block">
+        <button onClick="{{ prevOlb }}" aria-label="Prethodna" style="position:absolute;width:48px;height:48px;border-radius:999px;border:none;background:#fff;color:#0A1533;cursor:pointer;left:16px;top:50%;transform:translateY(-50%);font-size:22px">‹</button>
+        <button onClick="{{ nextOlb }}" aria-label="Sledeća" style="position:absolute;width:48px;height:48px;border-radius:999px;border:none;background:#fff;color:#0A1533;cursor:pointer;right:16px;top:50%;transform:translateY(-50%);font-size:22px">›</button>
+        <button onClick="{{ closeOlb }}" aria-label="Zatvori" style="position:absolute;width:48px;height:48px;border-radius:999px;border:none;background:#fff;color:#0A1533;cursor:pointer;right:16px;top:16px;font-size:20px">✕</button>
+      </div>
+    </sc-if>
   </section>
 
   <section id="galerija" style="max-width:1200px;margin:0 auto;padding:96px 24px">
@@ -900,6 +915,12 @@ class Component extends DCLogic {
     if (!this._lbKey) {
       this._lbKey = (e) => {
         if (e.key === "Escape" && this.state.vidOpen) { this.setState({ vidOpen: false }); return; }
+        if (this.state.olb != null) {
+          if (e.key === "Escape") this.setState({ olb: null });
+          if (e.key === "ArrowRight") this.setState((p) => ({ olb: (p.olb + 1) % 3 }));
+          if (e.key === "ArrowLeft") this.setState((p) => ({ olb: (p.olb + 2) % 3 }));
+          return;
+        }
         if (this.state.lb == null) return;
         if (e.key === "Escape") this.setState({ lb: null });
         if (e.key === "ArrowRight") this.setState((p) => ({ lb: (p.lb + 1) % 7 }));
@@ -940,6 +961,13 @@ class Component extends DCLogic {
         if (src && el.src !== src) el.src = src;
       },
       openLb: (e) => this.setState({ lb: +e.currentTarget.getAttribute("data-i") }),
+      olbOpen: s.olb != null,
+      olbSrc: s.olb != null ? ["assets/o-nama-fasada.webp","assets/ucionica-1.webp","assets/ucionica-b.webp"][s.olb] : "",
+      olbAlt: s.olb != null ? ["Ulaz u auto školu NIPROM I&D","Učionica za teorijsku nastavu","Učionica sa radnim mestima za polaznike"][s.olb] : "",
+      openOlb: (e) => this.setState({ olb: +e.currentTarget.getAttribute("data-o") }),
+      closeOlb: (e) => { e.stopPropagation(); this.setState({ olb: null }); },
+      prevOlb: (e) => { e.stopPropagation(); this.setState((p) => ({ olb: (p.olb + 2) % 3 })); },
+      nextOlb: (e) => { e.stopPropagation(); this.setState((p) => ({ olb: (p.olb + 1) % 3 })); },
       closeLb: (e) => { e.stopPropagation(); this.setState({ lb: null }); },
       prevLb: go(-1), nextLb: go(1),
       name: s.name, phone: s.phone, msg: s.msg,
